@@ -1,0 +1,17 @@
+Split,Model,MAE_Wh,RMSE_Wh,R2,WAPE_pct
+Train,Physics-only,162.0,230.6,0.8357,22.85
+Train,Data-NN,100.0,148.0,0.9324,14.1
+Train,PINN (lambda=0.1),100.1,149.2,0.9312,14.13
+Train,Residual NN,102.9,150.3,0.9302,14.52
+Val,Physics-only,170.2,234.7,0.8119,25.33
+Val,Data-NN,108.2,149.2,0.924,16.11
+Val,PINN (lambda=0.1),109.2,150.7,0.9225,16.25
+Val,Residual NN,107.0,147.5,0.9257,15.93
+Test-SV,Physics-only,145.1,213.9,0.8105,25.32
+Test-SV,Data-NN,94.9,131.6,0.9282,16.56
+Test-SV,PINN (lambda=0.1),93.6,129.5,0.9305,16.34
+Test-SV,Residual NN,93.8,131.4,0.9284,16.37
+Test-NV,Physics-only,58.5,80.7,0.9449,12.61
+Test-NV,Data-NN,40.4,50.9,0.9781,8.69
+Test-NV,PINN (lambda=0.1),41.6,53.8,0.9756,8.96
+Test-NV,Residual NN,43.4,57.0,0.9725,9.35
