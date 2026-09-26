@@ -13,7 +13,6 @@ This notebook compares **six approaches**:
 5. Residual neural network  
 6. **Autograd PINN**: a differentiable velocity field is learned from the observed speed trace, and PyTorch `autograd` computes \(d\hat v/dt\). That derivative enters the governing vehicle-dynamics equation used in the physics loss.
 
-The first five models are preserved from the earlier notebook. The sixth model is added specifically to test the derivative-based physics-informed formulation we discussed.
 
 ### Important implementation detail
 
@@ -869,8 +868,8 @@ AUTOGRAD_PINN_LAMBDAS = [0.1, 1.0, 5.0, 20.0]
 # Weight on the velocity-reconstruction loss.
 SPEED_LOSS_WEIGHT = 1.0
 
-# These are deliberately moderate so the notebook is practical in Colab.
-# Increase them later for a final publication run if desired.
+
+# Increase them later for tuning.
 SPEED_PRETRAIN_STEPS = 350
 AUTOGRAD_PINN_STEPS = 500
 AUTOGRAD_BATCH_SIZE = 8192
@@ -1332,7 +1331,7 @@ for k, v in results["best_paper_parameters"].items():
 
 display(results["paper_lambda_summary"])
 
-# Commented out IPython magic to ensure Python compatibility.
+
 # %matplotlib inline
 import matplotlib.pyplot as plt
 
