@@ -1,6 +1,6 @@
 # EV Energy Consumption Modeling: Physics-Based, Data-Driven, Residual, and Autograd PINN Benchmark
 
-Comprehensive benchmark framework comparing **six modeling approaches** for predicting electric vehicle battery energy consumption from real-world telemetry (Vehicle Energy Dataset - VED).
+Benchmark framework comparing **six modeling approaches** for predicting electric vehicle battery energy consumption from real-world telemetry (Vehicle Energy Dataset - VED).
 
 ## Key Features & Models
 
